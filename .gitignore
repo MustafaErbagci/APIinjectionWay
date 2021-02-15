@@ -1,1 +1,3 @@
-/paMediaGroup.iml
+/*.iml
+/target/
+/.idea/
