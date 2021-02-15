@@ -1,0 +1,86 @@
+{
+  "type": "array",
+  "title": "The root schema",
+  "description": "comprises the entire JSON document.",
+  "default": [],
+  "examples": [
+    [
+      {
+        "title": "Nottingham",
+        "location_type": "City",
+        "woeid": 30720,
+        "latt_long": "52.949219,-1.143920"
+      }
+    ]
+  ],
+  "additionalItems": true,
+  "items": {
+    "$id": "#/items",
+    "anyOf": [
+      {
+        "$id": "#/items/anyOf/0",
+        "type": "object",
+        "title": "The first anyOf schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "examples": [
+          {
+            "title": "Nottingham",
+            "location_type": "City",
+            "woeid": 30720,
+            "latt_long": "52.949219,-1.143920"
+          }
+        ],
+        "required": [
+          "title",
+          "location_type",
+          "woeid",
+          "latt_long"
+        ],
+        "properties": {
+          "title": {
+            "$id": "#/items/anyOf/0/properties/title",
+            "type": "string",
+            "title": "The title schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "Nottingham"
+            ]
+          },
+          "location_type": {
+            "$id": "#/items/anyOf/0/properties/location_type",
+            "type": "string",
+            "title": "The location_type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "City"
+            ]
+          },
+          "woeid": {
+            "$id": "#/items/anyOf/0/properties/woeid",
+            "type": "integer",
+            "title": "The woeid schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              30720
+            ]
+          },
+          "latt_long": {
+            "$id": "#/items/anyOf/0/properties/latt_long",
+            "type": "string",
+            "title": "The latt_long schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "52.949219,-1.143920"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    ]
+  }
+}

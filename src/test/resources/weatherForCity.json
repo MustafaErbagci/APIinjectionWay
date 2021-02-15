@@ -1,0 +1,678 @@
+{
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "consolidated_weather": [
+        {
+          "id": 5019559569391616,
+          "weather_state_name": "Heavy Cloud",
+          "weather_state_abbr": "hc",
+          "wind_direction_compass": "SE",
+          "created": "2021-02-13T20:24:55.569463Z",
+          "applicable_date": "2021-02-13",
+          "min_temp": -4.775,
+          "max_temp": -0.03500000000000003,
+          "the_temp": -0.47000000000000003,
+          "wind_speed": 11.367008809305654,
+          "wind_direction": 136.66619627955163,
+          "air_pressure": 1032.0,
+          "humidity": 67,
+          "visibility": 12.698341684562157,
+          "predictability": 71
+        },
+        {
+          "id": 6552476883877888,
+          "weather_state_name": "Heavy Rain",
+          "weather_state_abbr": "hr",
+          "wind_direction_compass": "SSE",
+          "created": "2021-02-13T20:24:58.584778Z",
+          "applicable_date": "2021-02-14",
+          "min_temp": -1.065,
+          "max_temp": 4.4350000000000005,
+          "the_temp": 2.7800000000000002,
+          "wind_speed": 11.830024495596383,
+          "wind_direction": 161.50035577304655,
+          "air_pressure": 1023.0,
+          "humidity": 74,
+          "visibility": 10.139224429332696,
+          "predictability": 77
+        },
+        {
+          "id": 6503933905207296,
+          "weather_state_name": "Light Rain",
+          "weather_state_abbr": "lr",
+          "wind_direction_compass": "SSW",
+          "created": "2021-02-13T20:25:01.582049Z",
+          "applicable_date": "2021-02-15",
+          "min_temp": 4.0649999999999995,
+          "max_temp": 10.14,
+          "the_temp": 10.295,
+          "wind_speed": 8.039835975293618,
+          "wind_direction": 209.16145971370665,
+          "air_pressure": 1016.5,
+          "humidity": 86,
+          "visibility": 10.490920524139028,
+          "predictability": 75
+        },
+        {
+          "id": 5676426314383360,
+          "weather_state_name": "Light Rain",
+          "weather_state_abbr": "lr",
+          "wind_direction_compass": "SSW",
+          "created": "2021-02-13T20:25:04.573918Z",
+          "applicable_date": "2021-02-16",
+          "min_temp": 6.545,
+          "max_temp": 10.135,
+          "the_temp": 9.875,
+          "wind_speed": 9.723260768731938,
+          "wind_direction": 207.16505074579447,
+          "air_pressure": 1007.0,
+          "humidity": 84,
+          "visibility": 10.233362164956652,
+          "predictability": 75
+        },
+        {
+          "id": 4560199747633152,
+          "weather_state_name": "Light Rain",
+          "weather_state_abbr": "lr",
+          "wind_direction_compass": "SW",
+          "created": "2021-02-13T20:25:08.649433Z",
+          "applicable_date": "2021-02-17",
+          "min_temp": 5.205,
+          "max_temp": 10.004999999999999,
+          "the_temp": 10.0,
+          "wind_speed": 11.962806405485301,
+          "wind_direction": 217.33942253137582,
+          "air_pressure": 1006.0,
+          "humidity": 78,
+          "visibility": 10.640049610275987,
+          "predictability": 75
+        },
+        {
+          "id": 4997518552203264,
+          "weather_state_name": "Heavy Rain",
+          "weather_state_abbr": "hr",
+          "wind_direction_compass": "WSW",
+          "created": "2021-02-13T20:25:10.647803Z",
+          "applicable_date": "2021-02-18",
+          "min_temp": 3.485,
+          "max_temp": 9.059999999999999,
+          "the_temp": 7.26,
+          "wind_speed": 9.962035114928815,
+          "wind_direction": 249.0,
+          "air_pressure": 1006.0,
+          "humidity": 70,
+          "visibility": 9.534319573689652,
+          "predictability": 77
+        }
+      ],
+      "time": "2021-02-13T21:35:47.964575Z",
+      "sun_rise": "2021-02-13T07:25:29.975133Z",
+      "sun_set": "2021-02-13T17:12:48.781161Z",
+      "timezone_name": "LMT",
+      "parent": {
+        "title": "England",
+        "location_type": "Region / State / Province",
+        "woeid": 24554868,
+        "latt_long": "52.883560,-1.974060"
+      },
+      "sources": [
+        {
+          "title": "BBC",
+          "slug": "bbc",
+          "url": "http://www.bbc.co.uk/weather/",
+          "crawl_rate": 360
+        },
+        {
+          "title": "Forecast.io",
+          "slug": "forecast-io",
+          "url": "http://forecast.io/",
+          "crawl_rate": 480
+        },
+        {
+          "title": "HAMweather",
+          "slug": "hamweather",
+          "url": "http://www.hamweather.com/",
+          "crawl_rate": 360
+        },
+        {
+          "title": "Met Office",
+          "slug": "met-office",
+          "url": "http://www.metoffice.gov.uk/",
+          "crawl_rate": 180
+        },
+        {
+          "title": "OpenWeatherMap",
+          "slug": "openweathermap",
+          "url": "http://openweathermap.org/",
+          "crawl_rate": 360
+        },
+        {
+          "title": "World Weather Online",
+          "slug": "world-weather-online",
+          "url": "http://www.worldweatheronline.com/",
+          "crawl_rate": 360
+        }
+      ],
+      "title": "Nottingham",
+      "location_type": "City",
+      "woeid": 30720,
+      "latt_long": "52.949219,-1.143920",
+      "timezone": "Europe/London"
+    }
+  ],
+  "required": [
+    "consolidated_weather",
+    "time",
+    "sun_rise",
+    "sun_set",
+    "timezone_name",
+    "parent",
+    "sources",
+    "title",
+    "location_type",
+    "woeid",
+    "latt_long",
+    "timezone"
+  ],
+  "properties": {
+    "consolidated_weather": {
+      "$id": "#/properties/consolidated_weather",
+      "type": "array",
+      "title": "The consolidated_weather schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "id": 5019559569391616,
+            "weather_state_name": "Heavy Cloud",
+            "weather_state_abbr": "hc",
+            "wind_direction_compass": "SE",
+            "created": "2021-02-13T20:24:55.569463Z",
+            "applicable_date": "2021-02-13",
+            "min_temp": -4.775,
+            "max_temp": -0.03500000000000003,
+            "the_temp": -0.47000000000000003,
+            "wind_speed": 11.367008809305654,
+            "wind_direction": 136.66619627955163,
+            "air_pressure": 1032.0,
+            "humidity": 67,
+            "visibility": 12.698341684562157,
+            "predictability": 71
+          },
+          {
+            "id": 6552476883877888,
+            "weather_state_name": "Heavy Rain",
+            "weather_state_abbr": "hr",
+            "wind_direction_compass": "SSE",
+            "created": "2021-02-13T20:24:58.584778Z",
+            "applicable_date": "2021-02-14",
+            "min_temp": -1.065,
+            "max_temp": 4.4350000000000005,
+            "the_temp": 2.7800000000000002,
+            "wind_speed": 11.830024495596383,
+            "wind_direction": 161.50035577304655,
+            "air_pressure": 1023.0,
+            "humidity": 74,
+            "visibility": 10.139224429332696,
+            "predictability": 77
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/consolidated_weather/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/consolidated_weather/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "id": 5019559569391616,
+                "weather_state_name": "Heavy Cloud",
+                "weather_state_abbr": "hc",
+                "wind_direction_compass": "SE",
+                "created": "2021-02-13T20:24:55.569463Z",
+                "applicable_date": "2021-02-13",
+                "min_temp": -4.775,
+                "max_temp": -0.03500000000000003,
+                "the_temp": -0.47000000000000003,
+                "wind_speed": 11.367008809305654,
+                "wind_direction": 136.66619627955163,
+                "air_pressure": 1032.0,
+                "humidity": 67,
+                "visibility": 12.698341684562157,
+                "predictability": 71
+              }
+            ],
+            "required": [
+              "id",
+              "weather_state_name",
+              "weather_state_abbr",
+              "wind_direction_compass",
+              "created",
+              "applicable_date",
+              "min_temp",
+              "max_temp",
+              "the_temp",
+              "wind_speed",
+              "wind_direction",
+              "air_pressure",
+              "humidity",
+              "visibility",
+              "predictability"
+            ],
+            "properties": {
+              "id": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/id",
+                "type": "integer",
+                "title": "The id schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  5019559569391616
+                ]
+              },
+              "weather_state_name": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/weather_state_name",
+                "type": "string",
+                "title": "The weather_state_name schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Heavy Cloud"
+                ]
+              },
+              "weather_state_abbr": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/weather_state_abbr",
+                "type": "string",
+                "title": "The weather_state_abbr schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "hc"
+                ]
+              },
+              "wind_direction_compass": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/wind_direction_compass",
+                "type": "string",
+                "title": "The wind_direction_compass schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "SE"
+                ]
+              },
+              "created": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/created",
+                "type": "string",
+                "title": "The created schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "2021-02-13T20:24:55.569463Z"
+                ]
+              },
+              "applicable_date": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/applicable_date",
+                "type": "string",
+                "title": "The applicable_date schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "2021-02-13"
+                ]
+              },
+              "min_temp": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/min_temp",
+                "type": "number",
+                "title": "The min_temp schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0.0,
+                "examples": [
+                  -4.775
+                ]
+              },
+              "max_temp": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/max_temp",
+                "type": "number",
+                "title": "The max_temp schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0.0,
+                "examples": [
+                  -0.03500000000000003
+                ]
+              },
+              "the_temp": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/the_temp",
+                "type": "number",
+                "title": "The the_temp schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0.0,
+                "examples": [
+                  -0.47000000000000003
+                ]
+              },
+              "wind_speed": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/wind_speed",
+                "type": "number",
+                "title": "The wind_speed schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0.0,
+                "examples": [
+                  11.367008809305654
+                ]
+              },
+              "wind_direction": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/wind_direction",
+                "type": "number",
+                "title": "The wind_direction schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0.0,
+                "examples": [
+                  136.66619627955163
+                ]
+              },
+              "air_pressure": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/air_pressure",
+                "type": "number",
+                "title": "The air_pressure schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0.0,
+                "examples": [
+                  1032.0
+                ]
+              },
+              "humidity": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/humidity",
+                "type": "integer",
+                "title": "The humidity schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  67
+                ]
+              },
+              "visibility": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/visibility",
+                "type": "number",
+                "title": "The visibility schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0.0,
+                "examples": [
+                  12.698341684562157
+                ]
+              },
+              "predictability": {
+                "$id": "#/properties/consolidated_weather/items/anyOf/0/properties/predictability",
+                "type": "integer",
+                "title": "The predictability schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  71
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "time": {
+      "$id": "#/properties/time",
+      "type": "string",
+      "title": "The time schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "2021-02-13T21:35:47.964575Z"
+      ]
+    },
+    "sun_rise": {
+      "$id": "#/properties/sun_rise",
+      "type": "string",
+      "title": "The sun_rise schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "2021-02-13T07:25:29.975133Z"
+      ]
+    },
+    "sun_set": {
+      "$id": "#/properties/sun_set",
+      "type": "string",
+      "title": "The sun_set schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "2021-02-13T17:12:48.781161Z"
+      ]
+    },
+    "timezone_name": {
+      "$id": "#/properties/timezone_name",
+      "type": "string",
+      "title": "The timezone_name schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "LMT"
+      ]
+    },
+    "parent": {
+      "$id": "#/properties/parent",
+      "type": "object",
+      "title": "The parent schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "title": "England",
+          "location_type": "Region / State / Province",
+          "woeid": 24554868,
+          "latt_long": "52.883560,-1.974060"
+        }
+      ],
+      "required": [
+        "title",
+        "location_type",
+        "woeid",
+        "latt_long"
+      ],
+      "properties": {
+        "title": {
+          "$id": "#/properties/parent/properties/title",
+          "type": "string",
+          "title": "The title schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "England"
+          ]
+        },
+        "location_type": {
+          "$id": "#/properties/parent/properties/location_type",
+          "type": "string",
+          "title": "The location_type schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Region / State / Province"
+          ]
+        },
+        "woeid": {
+          "$id": "#/properties/parent/properties/woeid",
+          "type": "integer",
+          "title": "The woeid schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            24554868
+          ]
+        },
+        "latt_long": {
+          "$id": "#/properties/parent/properties/latt_long",
+          "type": "string",
+          "title": "The latt_long schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "52.883560,-1.974060"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "sources": {
+      "$id": "#/properties/sources",
+      "type": "array",
+      "title": "The sources schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "title": "BBC",
+            "slug": "bbc",
+            "url": "http://www.bbc.co.uk/weather/",
+            "crawl_rate": 360
+          },
+          {
+            "title": "Forecast.io",
+            "slug": "forecast-io",
+            "url": "http://forecast.io/",
+            "crawl_rate": 480
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/sources/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/sources/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "title": "BBC",
+                "slug": "bbc",
+                "url": "http://www.bbc.co.uk/weather/",
+                "crawl_rate": 360
+              }
+            ],
+            "required": [
+              "title",
+              "slug",
+              "url",
+              "crawl_rate"
+            ],
+            "properties": {
+              "title": {
+                "$id": "#/properties/sources/items/anyOf/0/properties/title",
+                "type": "string",
+                "title": "The title schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "BBC"
+                ]
+              },
+              "slug": {
+                "$id": "#/properties/sources/items/anyOf/0/properties/slug",
+                "type": "string",
+                "title": "The slug schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "bbc"
+                ]
+              },
+              "url": {
+                "$id": "#/properties/sources/items/anyOf/0/properties/url",
+                "type": "string",
+                "title": "The url schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "http://www.bbc.co.uk/weather/"
+                ]
+              },
+              "crawl_rate": {
+                "$id": "#/properties/sources/items/anyOf/0/properties/crawl_rate",
+                "type": "integer",
+                "title": "The crawl_rate schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  360
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "title": {
+      "$id": "#/properties/title",
+      "type": "string",
+      "title": "The title schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Nottingham"
+      ]
+    },
+    "location_type": {
+      "$id": "#/properties/location_type",
+      "type": "string",
+      "title": "The location_type schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "City"
+      ]
+    },
+    "woeid": {
+      "$id": "#/properties/woeid",
+      "type": "integer",
+      "title": "The woeid schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        30720
+      ]
+    },
+    "latt_long": {
+      "$id": "#/properties/latt_long",
+      "type": "string",
+      "title": "The latt_long schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "52.949219,-1.143920"
+      ]
+    },
+    "timezone": {
+      "$id": "#/properties/timezone",
+      "type": "string",
+      "title": "The timezone schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Europe/London"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

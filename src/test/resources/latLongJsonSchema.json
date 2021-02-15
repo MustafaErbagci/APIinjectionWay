@@ -1,0 +1,106 @@
+{
+  "type": "array",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": [],
+  "examples": [
+    [
+      {
+        "distance": 0,
+        "title": "London",
+        "location_type": "City",
+        "woeid": 44418,
+        "latt_long": "51.506321,-0.12714"
+      },
+      {
+        "distance": 47900,
+        "title": "Luton",
+        "location_type": "City",
+        "woeid": 27997,
+        "latt_long": "51.894932,-0.428090"
+      }
+    ]
+  ],
+  "additionalItems": true,
+  "items": {
+    "$id": "#/items",
+    "anyOf": [
+      {
+        "$id": "#/items/anyOf/0",
+        "type": "object",
+        "title": "The first anyOf schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "examples": [
+          {
+            "distance": 0,
+            "title": "London",
+            "location_type": "City",
+            "woeid": 44418,
+            "latt_long": "51.506321,-0.12714"
+          }
+        ],
+        "required": [
+          "distance",
+          "title",
+          "location_type",
+          "woeid",
+          "latt_long"
+        ],
+        "properties": {
+          "distance": {
+            "$id": "#/items/anyOf/0/properties/distance",
+            "type": "integer",
+            "title": "The distance schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "title": {
+            "$id": "#/items/anyOf/0/properties/title",
+            "type": "string",
+            "title": "The title schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "London"
+            ]
+          },
+          "location_type": {
+            "$id": "#/items/anyOf/0/properties/location_type",
+            "type": "string",
+            "title": "The location_type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "City"
+            ]
+          },
+          "woeid": {
+            "$id": "#/items/anyOf/0/properties/woeid",
+            "type": "integer",
+            "title": "The woeid schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              44418
+            ]
+          },
+          "latt_long": {
+            "$id": "#/items/anyOf/0/properties/latt_long",
+            "type": "string",
+            "title": "The latt_long schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "51.506321,-0.12714"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    ]
+  }
+}
