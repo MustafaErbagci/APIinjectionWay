@@ -52,11 +52,7 @@ public class WeatherStepDef {
 
 
 
-    @Then("I verify the Content Type is {string}")
-    public void i_verify_the_Content_Type_is(String expectedContentType) {
-        injStep.getValidatableResponse().assertThat().contentType(expectedContentType);
 
-    }
 
     @When("I verify the location search payload matches with the jsonSchema")
     public void i_verify_the_location_response_match_with_the_jsonSchema() {
@@ -210,15 +206,6 @@ public class WeatherStepDef {
         injStep.getValidatableResponse().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("latLongJsonSchema.json"));
     }
 
-    @Given("accept type is HTML")
-    public void accept_type_is_HTML() {
-        injStep.setRequestSpecification(requestSpecification.given().accept(ContentType.HTML));
-    }
-
-    @Given("accept type is xml")
-    public void accept_type_is_XML() {
-        injStep.setRequestSpecification(requestSpecification.given().accept(ContentType.XML));
-    }
 
 
 }

@@ -211,6 +211,7 @@ Feature: Retrieving a weather information for Locations
   Scenario: Verify the location search body content type is XML
     And accept type is xml
     When I send a GET request to location Search web service to retrieve weather info for "London"
+    And I verify the statusCode is 200
     Then  I verify the Content Type is "application/xml"
 #defect
   Scenario: Verify the location search body content type is HTML
