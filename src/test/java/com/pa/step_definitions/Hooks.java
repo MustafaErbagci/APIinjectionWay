@@ -10,4 +10,5 @@ public class Hooks {
     public void setUp(){
         baseURI= ConfigReader.get("apiUrl");
     }
+
 }

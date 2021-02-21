@@ -6,7 +6,6 @@ import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
-import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 
 import java.util.*;
@@ -17,28 +16,23 @@ import static org.junit.Assert.*;
 
 public class WeatherStepDef {
 
-    InjStep injStep;
+    InjectionClass injStep;
 
-    public WeatherStepDef(InjStep injStep1){
+    public WeatherStepDef(InjectionClass injStep1){
         this.injStep=injStep1;
     }
 
-//    Response response;
-//    ValidatableResponse validatableResponse;
-//    RequestSpecification requestSpecification;
-//
-//    Response response=injStep.getResponse();
-//    ValidatableResponse validatableResponse=injStep.getValidatableResponse();
 
     @Given("accept type is application-json")
     public void accept_type_is_application_json() {
         injStep.setRequestSpecification(given().accept(ContentType.JSON));
+
     }
 
     @Then("I verify the statusCode is {int}")
     public void i_verify_the_statusCode_is(int expectedStatusCode) {
 
-        injStep.getValidatableResponse().assertThat().statusCode(expectedStatusCode).log().all();
+        injStep.getValidatableResponse().assertThat().statusCode(expectedStatusCode);
 
     }
 
@@ -48,15 +42,11 @@ public class WeatherStepDef {
 
         injStep.setValidatableResponse(ApiUtils.getRequestToLocationSearch(city));
 
+
     }
-
-
-
-
 
     @When("I verify the location search payload matches with the jsonSchema")
     public void i_verify_the_location_response_match_with_the_jsonSchema() {
-
         injStep.getValidatableResponse().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("locationSearchJsonSchema.json"));
 
     }
@@ -90,26 +80,6 @@ public class WeatherStepDef {
 
     }
 
-    @When("I send a GET request to Location web service for {string} and the date of {string}")
-    public void i_send_a_GET_request_to_Location_web_service_for_and_the_date_of(String city, String date) {
-        injStep.setValidatableResponse(ApiUtils.getRequestToLocationWebService(city,date));
-    }
-
-    @When("I verify the {string} is correct")
-    public void i_verify_the_is_correct(String memberName) {
-        injStep.getValidatableResponse().assertThat()
-                .body("location_type[0]",equalToIgnoringCase(memberName));
-
-    }
-
-    @When("I verify if the payload has those items")
-    public void i_verify_if_the_payload_has_those_items(List<String> expectedMembers) {
-        Map<String,Object> actualMembers = injStep.getValidatableResponse().extract().response().path("[0]");
-
-
-        assertTrue(actualMembers.keySet().containsAll(expectedMembers));
-
-    }
 
     @Then("I verify the statusCode is NOT {int}")
     public void i_verify_the_statusCode_is_NOT(int unexpectedStatusCode) {
